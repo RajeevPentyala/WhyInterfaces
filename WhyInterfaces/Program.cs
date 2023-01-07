@@ -11,17 +11,17 @@ namespace WhyInterfaces
     {
         static void Main(string[] args)
         {
-            var cars = GetCars();
+            var cartItems = AddCars();
 
-            foreach (var car in cars)
+            foreach (var carItem in cartItems)
             {
-                car.Ship();
+                carItem.Ship();
             }
-
+            
             Console.ReadLine();
         }
 
-        public static List<ICar> GetCars()
+        public static List<ICar> AddCars()
         {
             var cars = new List<ICar>
             {
